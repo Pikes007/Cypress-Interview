@@ -6,9 +6,13 @@ Output the `href` values to the console. Logging to cypress or the standard dev 
 
 Please perform this entire task on the mobile site, including the navigation and link data fetching.
 */
-describe('Get all links', () => {
-	it('should be able to browse to the product page in mobile view and real all links', () => {
-		cy
-			.visit('/')
-		});
+import { ProductPage } from "./pages/productPage";
+
+const productPage = new ProductPage();
+
+describe("Get all links", () => {
+    it("should be able to browse to the product page in mobile view and real all links", () => {
+        productPage.visitAluminateForEducation();
+        productPage.collectHrefValues();
+    });
 });

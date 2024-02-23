@@ -1,2 +1,4 @@
 .DS_Store
+.vs/
 
+/cypress/videos/index.spec.js.mp4

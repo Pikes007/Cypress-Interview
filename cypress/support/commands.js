@@ -10,7 +10,21 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+
+Cypress.Commands.add("fillInForm", (selector, input) => {
+    cy.get(selector).type(input);
+});
+
+Cypress.Commands.add(
+    "waitForParentVisible",
+    { prevSubject: "element" },
+    (subject) => {
+        return cy.wrap(subject)
+            .parent()
+            .should("be.visible");
+    }
+);
+
 //
 //
 // -- This is a child command --

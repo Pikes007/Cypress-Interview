@@ -1,0 +1,22 @@
+{
+  "name": "cypress-interview",
+  "version": "1.0.0",
+  "description": "There are two tasks to be completed. I would expect this to take around 30 minutes.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "cypress": "^13.6.5"
+  },
+  "cypress": {
+    "supportFile": "cypress/support/commands.js"
+  },
+  "dependencies": {
+    "cypress-localstorage-commands": "^2.2.5"
+  }
+}
