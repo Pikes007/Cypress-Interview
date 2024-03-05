@@ -1,0 +1,95 @@
+{
+  "menuItems": [
+    {
+      "mainMenuItem": "Home",
+      "hasSubMenu": false,
+      "href": "https://www.aluminati.net/"
+    },
+    {
+      "mainMenuItem": "Products",
+      "hasSubMenu": true,
+      "subMenuItems": [
+        {
+          "name": "Aluminate for Enterprise",
+          "href": "https://www.aluminati.net/alumni-management-platform/"
+        },
+        {
+          "name": "Aluminate for Education",
+          "href": "https://www.aluminati.net/aluminate-for-education-alumni-engagement-software/i"
+        },
+        {
+          "name": "Aluminate for Membership",
+          "href": "https://www.aluminati.net/membership/"
+        },
+        {
+          "name": "Social Data Sync",
+          "href": "https://www.aluminati.net/social-data-sync/"
+        },
+        {
+          "name": "Email for Life",
+          "href": "https://www.aluminati.net/email-for-life/"
+        },
+        {
+          "name": "Consultancy",
+          "href": "https://www.aluminati.net/consultancy/"
+        }
+      ]
+    },
+    {
+      "mainMenuItem": "About",
+      "hasSubMenu": true,
+      "subMenuItems": [
+        {
+          "name": "Why Choose Aluminati",
+          "href": "https://www.aluminati.net/about/"
+        },
+        {
+          "name": "Team",
+          "href": "https://www.aluminati.net/team/"
+        },
+        {
+          "name": "Work with Us",
+          "href": "https://www.aluminati.net/jobs/"
+        }
+      ]
+    },
+    {
+      "mainMenuItem": "Resources",
+      "hasSubMenu": true,
+      "subMenuItems": [
+        {
+          "name": "Blog",
+          "href": "https://www.aluminati.net/news/"
+        },
+        {
+          "name": "Case Studies & Client Stories",
+          "href": "https://www.aluminati.net/case-studies-client-stories/"
+        },
+        {
+          "name": "Ebooks & Whitepapers",
+          "href": "https://www.aluminati.net/ebooks-whitepapers/"
+        },
+        {
+          "name": "Webinars",
+          "href": "https://www.aluminati.net/creating-connection/"
+        }
+      ]
+    },
+    {
+      "mainMenuItem": "Pricing",
+      "hasSubMenu": false,
+      "href": "https://www.aluminati.net/pricing/"
+    },
+    {
+      "mainMenuItem": "Contact",
+      "hasSubMenu": false,
+      "href": "https://www.aluminati.net/contact/"
+    },
+    {
+      "mainMenuItem": "Request a Demo",
+      "hasSubMenu": false,
+      "href": "https://www.aluminati.net/request-a-demo/"
+    }
+  ]
+}
+

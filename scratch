@@ -1,0 +1,51 @@
+visitAluminateForEducation() {
+        cy.viewport("iphone-x").visit("/");
+        cy.get(this.burgerBars).click();
+        cy.get(this.burgerMenu).waitForParentVisible();
+        cy.get(this.productDropdown).then(($element) => {
+            // Log the attributes of the current element
+            cy.log(
+                `Element Attributes: ${JSON.stringify($element[0].attributes)}`
+            );
+
+            // Log the display style of the current element
+            cy.get(this.productDropdown)
+                .invoke("css", "display")
+                .then((displayStyle) => {
+                    cy.log(`Element Display Style: ${displayStyle}`);
+                });
+
+            cy.get(this.productDropdown).then(($element) => {
+                // This will return the immediate parent
+                const immediateParent = $element.parent();
+
+                // This will return all ancestors up to the root
+                //const allAncestors = $element.parents();
+
+                // Log the results
+                cy.log("Immediate Parent:", immediateParent);
+                //cy.log("All Ancestors:", allAncestors);
+            });
+            
+            // Traverse through all parent elements
+            let currentElement = $element;
+            while (currentElement.parent().length) {
+                currentElement = currentElement.parent();
+
+                // Log attributes and display style of each parent element
+                cy.log(
+                    `Parent Element Attributes: ${JSON.stringify(currentElement[0].attributes)}`
+                );
+
+                // Log the display style of each parent element
+                cy.wrap(currentElement)
+                    .invoke("css", "display")
+                    .then((parentDisplayStyle) => {
+                        cy.log(
+                            `Parent Element Display Style: ${parentDisplayStyle}`
+                        );
+                    });
+            }
+        });
+        //cy.get(this.aluminateForEducationLink).click();
+    }
